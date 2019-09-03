@@ -288,7 +288,7 @@ try:
                                                     if user_id in adminIds:
                                                         (day, month, year, hout, minutes, sec) = getDate()
                                                         mess = ""
-                                                        text = obj['text'].split()
+                                                        text = obj['text'].lower().split()
                                                         if len(text)==0:
                                                             continue
                                                         if text[0]=="info":
