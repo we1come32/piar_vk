@@ -326,8 +326,6 @@ try:
                             work = True
                         if restart:
                             work = False
-                            for conn in connections:
-                                conn.close()
         except Exception as e:
             fixError(e)
             input()
